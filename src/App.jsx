@@ -1,6 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar/Sidebar";
+import React from 'react'
+import Hero from './components/Hero'
+import OffersSection from './components/OffersSection'
+import WorkShowcase from './components/WorkShowcase'
 
 import Home from "./components/Sidebar/Home";
 import About from "./components/Sidebar/About";
@@ -25,6 +29,14 @@ function App() {
          </diV>
     
   );
+    <div className="min-h-screen bg-white text-gray-900">
+      <main>
+        <Hero />
+        <OffersSection />
+        <WorkShowcase />
+      </main>
+    </div>
+  
 }
 
 export default App;
